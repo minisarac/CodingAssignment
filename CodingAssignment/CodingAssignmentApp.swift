@@ -1,3 +1,4 @@
+/// The main app entry point configuring the root SwiftUI scene and environment.
 //
 //  CodingAssignmentApp.swift
 //  CodingAssignment
@@ -7,8 +8,10 @@
 
 import SwiftUI
 
+/// The main application struct for the CodingAssignment app.
 @main
 struct CodingAssignmentApp: App {  
+    /// Sets up the window group, root view, and initializes the shared CountryData instance.
     var body: some Scene {
         WindowGroup {
             IntroView()
@@ -19,3 +22,4 @@ struct CodingAssignmentApp: App {
         }
     }
 }
+
