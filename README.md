@@ -1,4 +1,5 @@
-# Country Info App
+# Country Info App 
+<img src="CodingAssignment/Assets.xcassets/AppIcon.appiconset/appIcon.png" width=100>
 
 A simple Swift app for representing country data, including details such as name, capital, region, and country code. This is prepared as part of a coding assignment, showcasing both UIKit and SwiftUI implementations for displaying table data and navigation.
 
