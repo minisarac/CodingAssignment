@@ -24,6 +24,8 @@ struct CountryListView: View {
             }
             HStack {
               Text(country.capital)
+                .foregroundStyle(.secondary)
+                .font(.subheadline)
               Spacer()
             }
           }
