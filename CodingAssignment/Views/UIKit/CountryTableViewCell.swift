@@ -7,15 +7,26 @@
 
 import UIKit
 
+/// A custom table view cell for displaying country information including the name, region, code, and capital.
 class CountryTableViewCell: UITableViewCell {
+    /// Label displaying the country's name and region.
     let nameRegionLabel = UILabel()
+    /// Label displaying the country's code, aligned to the right.
     let codeLabel = UILabel()
+    /// Label displaying the country's capital city, styled as a subheadline with secondary text color.
     let capitalLabel = UILabel()
 
+    /// Horizontal stack view containing the nameRegionLabel and codeLabel, arranged on the top row.
     private let topRow = UIStackView()
+    /// Horizontal stack view containing the capitalLabel on the bottom row.
     private let bottomRow = UIStackView()
+    /// Vertical stack view containing the topRow and bottomRow stack views to layout the cell content vertically.
     private let verticalStack = UIStackView()
 
+    /// Initializes the country table view cell, sets up its UI components and layout constraints.
+    /// - Parameters:
+    ///   - style: The cell style.
+    ///   - reuseIdentifier: The reuse identifier for the cell.
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
 
@@ -74,6 +85,8 @@ class CountryTableViewCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
 
+    /// Configures the cell's labels with the data from a given `Country` model.
+    /// - Parameter country: The `Country` instance containing the data to display.
     func configure(with country: Country) {
         nameRegionLabel.text = "\(country.name), \(country.region)"
         codeLabel.text = country.code
