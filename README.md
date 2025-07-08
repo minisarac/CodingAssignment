@@ -42,10 +42,10 @@ Because of the complexity and time limit, I added the search functionality only 
 
 ## Screenshots
 
-![IntroView](screenshots/intro.png)
-![UIKit](screenshots/uikit.png)
-![SwiftUI](screenshots/swiftui.png)
-![Search](screenshots/search.png)
+![IntroView](Screenshots/intro.png)
+![UIKit](Screenshots/uikit.png)
+![SwiftUI](Screenshots/swiftui.png)
+![Search](Screenshots/search.png)
 
 ## Structure
 
